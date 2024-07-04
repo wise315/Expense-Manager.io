@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    position: relative;
+    min-height: 100vh;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.left-container,
+.right-container {
+    min-height: 100vh;
+}
+
+.left-container {
+    background-image: linear-gradient(#0277bd, #03a9f4);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex: 1;
+}
+
+.right-container {
+    position: relative;
+    flex: 2;
+    padding: 2%;
+}
+
+.header {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+}
+
+.sub-text {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 500;
+}
+
+.month-container,
+.calc-container {
+    padding: 5%;
+}
+
+.fs-white {
+    color: #ffffff;
+}
+
+.fs-dark-grey {
+    color: #4e4e4e;
+}
+
+.budget-container {
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 0.5rem; /* 8px */
+    box-shadow: 0 0.375rem 0.25rem #000000; /* 0 6px 4px */
+    padding: 1rem; /* Add some padding */
+}
+
+.month-amount {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #00446d;
+}
+
+.expense-row {
+    padding: 0.625rem; /* 10px */
+}
+
+.right-container .header {
+    font-size: 3rem; /* 48px */
+    font-weight: 700;
+}
+
+.right-container .sub-text {
+    font-size: 2rem; /* 32px */
+    font-weight: 500;
+}
+
+.right-container .input-expense-description,
+.right-container .input-expense-value {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 500;
+}
+
+.right-container .btn-submit-expense {
+    font-size: 1.75rem; /* 28px */
+    font-weight: 600;
+}
+
+.right-container .dropdown-toggle,
+.right-container .dropdown-menu .dropdown-item {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 500;
+}
+
+.right-container .expense-item {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 500;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .right-container .header {
+        font-size: 2.625rem; /* 42px */
+    }
+
+    .right-container .sub-text {
+        font-size: 1.75rem; /* 28px */
+    }
+
+    .right-container .input-expense-description,
+    .right-container .input-expense-value {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .right-container .btn-submit-expense {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .right-container .dropdown-toggle,
+    .right-container .dropdown-menu .dropdown-item {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .right-container .expense-item {
+        font-size: 1.375rem; /* 22px */
+    }
+}
+
+@media (max-width: 992px) {
+    .right-container .header {
+        font-size: 2.25rem; /* 36px */
+    }
+
+    .right-container .sub-text {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .right-container .input-expense-description,
+    .right-container .input-expense-value {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .right-container .btn-submit-expense {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .right-container .dropdown-toggle,
+    .right-container .dropdown-menu .dropdown-item {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .right-container .expense-item {
+        font-size: 1.25rem; /* 20px */
+    }
+}
+
+@media (max-width: 768px) {
+    .right-container .header {
+        font-size: 1.875rem; /* 30px */
+    }
+
+    .right-container .sub-text {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .right-container .input-expense-description,
+    .right-container .input-expense-value {
+        font-size: 1rem; /* 16px */
+    }
+
+    .right-container .btn-submit-expense {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .right-container .dropdown-toggle,
+    .right-container .dropdown-menu .dropdown-item {
+        font-size: 1rem; /* 16px */
+    }
+
+    .right-container .expense-item {
+        font-size: 1.125rem; /* 18px */
+    }
+}
+
+@media (max-width: 576px) {
+    .right-container .header {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .right-container .sub-text {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .right-container .input-expense-description,
+    .right-container .input-expense-value {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .right-container .btn-submit-expense {
+        font-size: 1rem; /* 16px */
+    }
+
+    .right-container .dropdown-toggle,
+    .right-container .dropdown-menu .dropdown-item {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .right-container .expense-item {
+        font-size: 1rem; /* 16px */
+    }
+}
+
+/* Flexbox layout */
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container,
+.right-container {
+    display: flex;
+    flex-direction: column;
+}
